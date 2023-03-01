@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada:ital,wght@1,300&family=Lora:ital@0;1&display=swap');
+
+:root{
+    --amethyst: #ac6eac;
+
+}
+
+
+*{
+    font-family: 'Labrada', serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--amethyst);
+    color: #333;
+}
+
+html{
+    front-size: 62.0%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar-track{
+    background: #857979;
+}
+
+html::-webkit-scrollbar{
+    width:0.9rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--amethist)
+}
+
+body{
+    background: rgba(233, 162, 226, 0.933);
+    overflow-x: hidden;
+    padding-left: 40rem;
+    
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem;
+}
+
+.btn{
+    padding:1rem 1rem;
+    background: #874182;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+.btn:hover{
+    background-color: #ac6eac;
+}
+
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height: 17rem;
+    width:17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:.7rem solid var(--amethyst)
+}
+
+header .user .name{
+    font-size: 1.5rem;
+    color: black;
+
+}
+
+header .user .post{
+    font-size: 1rem;
+    color: black;
+}
+
+header .navbar{
+    width:50%;
+}
+
+header .navbar u1{
+    list-style: none;
+    padding:1rem 3rem;
+}
+
+header .navbar u1 li a{
+    display: block;
+    padding: 0rem;
+    margin: 0.5rem 0;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    border-radius: 0rem;
+}
+
+header .navbar u1 li a:hover{
+    background:var(--amethyst);
+}
+
+#menu{
+    position: fixed;
+    top:2rem; right:2rem;
+    background: black;
+    color: white;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rems;
+}
+
+.home h3{
+    font-size: 3rem;
+    color: black;
+}
+
+.home h1{
+    font-size:3rem;
+    color: black;
+}
+
+.home p{
+    font-size: 1.5rem;
+    color:black;
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+
+}
+
+.contact .row form{
+    flex: 1 1 40rem;
+    padding:1rem;
+    margin:1rem;
+    margin-bottom:1rem;
+
+}
+
+.contact .row form .box{
+    padding:1rem;
+    margin:1rem 0;
+    background: white;
+    color: white;
+    text-transform: none;
+    font-size: 1rem;
+    width: 100%;
+
+}
+
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+
+
